@@ -1,0 +1,271 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  color: #fff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+.nav-link {
+  color: #fff;
+}
+.navbar-nav .nav-item {
+  margin-right: 2rem;
+}
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: gray;
+  text-decoration: none;
+}
+.navbar{
+      background: linear-gradient(to top , #0a0520 , #1a0a3e );
+  height: 5rem;
+}
+.rigester {
+  padding: 10px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #b06cff, #ff4f75);
+  transition: 0.25s ease;
+  box-shadow: 0 4px 10px rgba(255, 79, 117, 0.3);
+  right: 10px;
+  font-family: "Montserrat";
+}
+.showMore {
+  padding: 10px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: #332344;
+  box-shadow: 0 4px 10px rgba(51, 35, 68, 0.3);
+
+  transition: 0.25s ease;
+
+  right: 10px;
+  font-family: "Montserrat";
+}
+.title {
+  font-size: 100px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat";
+  text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 24px #fff;
+}
+.subtitle {
+  font-size: 50px;
+  margin-top: -20px;
+  color: #dab447;
+  font-weight: bold;
+  font-family: "cardo";
+  text-shadow: 0 0 0px #dab447, 0 0 0px #dab447, 0 0 24px #dab447;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.chart {
+  animation: float 2s ease-in-out infinite;
+}
+.logoSec {
+}
+.agendaTitleMain {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    90deg,
+    #10b981 0%,
+    #3b82f6 25%,
+    #8b5cf6 50%,
+    #ec4899 75%,
+    #f59e0b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  animation: gradientShift 3s ease infinite;
+  background-size: 200% auto;
+}
+.timeline {
+  height: 6rem;
+  width: 100%;
+  gap: 2rem;
+}
+.day {
+  background-color: #332344;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.day:hover {
+  background: linear-gradient(to right, #9350dc, #c359c7, #f362b3, #ff47ae);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 15px rgba(255, 71, 174, 0.4);
+}
+.date {
+  color: gray;
+}
+.details {
+}
+.event-details {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #12022b, #270a4d, #3b116e);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+}
+.event {
+  height: 11rem;
+}
+
+.event {
+  width: 80%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.clock-img {
+  position: relative;
+  top: 0;
+  width: 150px;
+}
+
+.event-details {
+  width: 80%;
+  margin-left: 15px;
+  font-size: x-large;
+
+  box-shadow: 0 0 16px rgba(34, 16, 50, 0.5);
+  padding-left: 3rem;
+  letter-spacing: 1px;
+  margin: 16px;
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.event-time {
+  color: #63c1fd;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.event-label {
+  font-family: "Montserrat", sans-serif;
+  color: #ded9e6;
+  padding: 7px 24px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+}
+
+.event-title {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+
+  color: #fff;
+  font-weight: 300;
+}
+.general {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px #fff2;
+}
+.cermony {
+  background: linear-gradient(to right, #fb9ad0, #ff47ae);
+  box-shadow: 0 0 8px #ff47ae;
+}
+.teams {
+  background: linear-gradient(to right, #3273ed, #06b6d4);
+  box-shadow: 0 0 8px #06b6d4;
+}
+.working {
+  background: linear-gradient(to right, #d3637f, #980026, #650019);
+  box-shadow: 0 0 8px #650019;
+}
+.break {
+  background: linear-gradient(to right, #167052, #1ea97b, #44ddab);
+  box-shadow: 0 0 8px #44ddab;
+}
+
+
+.char {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  z-index: 0;
+  width: 200px;
+}
+.char2 {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  z-index: 0;
+  width: 300px;
+}
+.agenda-section {
+  position: relative;
+}
+.glowing1 {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  z-index: 0;
+  width: 90%;
+  transform: translate(-50%, 50%);
+  pointer-events: none;
+}
+.glowing2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 50%;
+  pointer-events: none; 
+}
+.agenda-timing {
+  position: relative;
+  z-index: 2;
+}

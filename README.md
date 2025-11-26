@@ -1,2 +1,1 @@
-# THE-ELITE-LEAGUE-
-The elite league website
+# Elite-league
