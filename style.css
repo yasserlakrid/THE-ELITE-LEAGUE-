@@ -29,8 +29,8 @@ body {
   color: gray;
   text-decoration: none;
 }
-.navbar{
-      background: linear-gradient(to top , #0a0520 , #1a0a3e );
+.navbar {
+  background: linear-gradient(to top, #0a0520, #1a0a3e);
   height: 5rem;
 }
 .rigester {
@@ -70,6 +70,7 @@ body {
   font-family: "Montserrat";
   text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 24px #fff;
 }
+
 .subtitle {
   font-size: 50px;
   margin-top: -20px;
@@ -230,7 +231,6 @@ body {
   box-shadow: 0 0 8px #44ddab;
 }
 
-
 .char {
   position: absolute;
   right: 0;
@@ -263,9 +263,14 @@ body {
   bottom: 0;
   z-index: 0;
   width: 50%;
-  pointer-events: none; 
+  pointer-events: none;
 }
 .agenda-timing {
   position: relative;
   z-index: 2;
+}
+@media (max-width: 575px) {
+  .title {
+    font-size: 75px;
+  }
 }
