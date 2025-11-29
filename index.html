@@ -21,12 +21,10 @@
 
     <!-- Main styles for this landing page -->
     <link rel="stylesheet" href="landing_page.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body class="text-white">
-    <!-- =========================================================
-         HEAD SECTION (navbar + hero)
-         ========================================================= -->
-    <nav class="navbar navbar-expand-sm text-white w-80 pt-0 sticky-top d-none d-lg-block">
+    <nav class="navbar navbar-expand-sm text-white w-80 pt-0 sticky-top">
       <div class="container-fluid justify-content-center text-white h-100">
         <div
           class="collapse navbar-collapse justify-content-center text-white"
@@ -64,7 +62,10 @@
         </div>
       </div>
     </nav>
-    <section class="head-section p-4">
+    <!-- =========================================================
+         HEAD SECTION (navbar + hero)
+         ========================================================= -->
+    <section class="head-section">
       <div
         class="d-flex pt-5"
         style="
@@ -84,7 +85,6 @@
           "
         >
           <img
-            class="d-none d-lg-block"
             style="width: 300px; height: 300px"
             src="src/lampa.svg"
             alt="Light bulb"
@@ -115,7 +115,7 @@
           <!-- Pink - Bottom Center Left -->
           <img
             src="src/headP/among_us_character_pink 1.png"
-            class="chart position-absolute character-img d-none d-md-block"
+            class="chart position-absolute character-img"
             style="left: 20%; bottom: 30%; width: 60px"
             alt="Pink"
           />
@@ -342,65 +342,10 @@
         </div>
       </div>
     </section>
-
-    <!-- =========================================================
-         OUR SPONSORS
-         ========================================================= -->
-    <section class="sponsors-section">
-      <!-- Yellow glow background -->
-      <div class="sponsors-glow-yellow"></div>
-
-      <!-- Among Us red character on the right -->
-      <img
-        src="../assets/character_red2.svg"
-        alt="Red crew character"
-        class="sponsors-character"
-      />
-
-      <!-- 3-color pills bottom-left -->
-      <div class="sponsors-pills">
-        <img src="../assets/among_us.png" alt="Among Us Crew" />
-      </div>
-
-      <div class="content">
-        <!-- Same typography as other titles, but with yellow gradient -->
-        <h2 class="sponsors-title">OUR SPONSORS</h2>
-
-        <!-- Sponsor cards row -->
-        <div class="sponsors-grid">
-          <article class="sponsor-card">
-            <div class="sponsor-name">GC</div>
-            <div class="sponsor-role">THE SPONSOR</div>
-          </article>
-
-          <article class="sponsor-card">
-            <div class="sponsor-name">GC</div>
-            <div class="sponsor-role">THE SPONSOR</div>
-          </article>
-
-          <article class="sponsor-card">
-            <div class="sponsor-name">GC</div>
-            <div class="sponsor-role">THE SPONSOR</div>
-          </article>
-
-          <article class="sponsor-card">
-            <div class="sponsor-name">GC</div>
-            <div class="sponsor-role">THE SPONSOR</div>
-          </article>
-        </div>
-
-        <!-- CTA: become sponsor -->
-        <div class="sponsors-cta">
-          <p class="sponsors-question">INTRESTED IN SPONSORING ?</p>
-          <button class="btn-sponsor" type="button">Become Sponsor</button>
-        </div>
-      </div>
-    </section>
-
     <!-- =========================================================
          EVENT AGENDA 
          ========================================================= -->
-    <section class="agenda-section w-100 p-4" id="agenda">
+    <section class="agenda-section w-100" id="agenda">
       <img class="char d-none d-md-block" src="src/agendaSrc/orang.png" />
       <img class="char2 d-none d-md-block" src="src/agendaSrc/green.png" />
       <img class="glowing1 d-none d-lg-block" src="src/agendaSrc/glow.png" />
@@ -706,6 +651,109 @@
       </div>
       <div class="end-logo-agenda d-flex justify-content-end">
         <img src="src/agendaSrc/frame.png" />
+      </div>
+    </section>
+    <!-- =========================================================
+         OUR SPONSORS
+         ========================================================= -->
+    <section class="sponsors-section">
+      <!-- Yellow glow background -->
+      <div class="sponsors-glow-yellow"></div>
+
+      <!-- Among Us red character on the right -->
+      <img
+        src="../assets/character_red2.svg"
+        alt="Red crew character"
+        class="sponsors-character"
+      />
+
+      <!-- 3-color pills bottom-left -->
+      <div class="sponsors-pills">
+        <img src="../assets/among_us.png" alt="Among Us Crew" />
+      </div>
+
+      <div class="content">
+        <!-- Same typography as other titles, but with yellow gradient -->
+        <h2 class="sponsors-title">OUR SPONSORS</h2>
+
+        <!-- Sponsor cards row -->
+        <div class="sponsors-grid">
+          <article class="sponsor-card">
+            <div class="sponsor-name">GC</div>
+            <div class="sponsor-role">THE SPONSOR</div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-name">GC</div>
+            <div class="sponsor-role">THE SPONSOR</div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-name">GC</div>
+            <div class="sponsor-role">THE SPONSOR</div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-name">GC</div>
+            <div class="sponsor-role">THE SPONSOR</div>
+          </article>
+        </div>
+
+        <!-- CTA: become sponsor -->
+        <div class="sponsors-cta">
+          <p class="sponsors-question">INTRESTED IN SPONSORING ?</p>
+          <button class="btn-sponsor" type="button">Become Sponsor</button>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+         OUR MENTORS
+         ========================================================= -->
+    <section class="our-mentors">
+      <div id="ourMentors" class="">
+        <div id="blurPurple" class="neon"></div>
+        <h2 id="ourMentorsH2" class="autoShow">OUR MENTORS</h2>
+        <p id="smplTxt" class="autoShow">
+          Get personalized guidance from seasoned professionals who will <br />
+          help you level up your problms
+        </p>
+        <div id="rdMentor" class="autoShow">
+          <center>
+            <img
+              id="rdMentorImg"
+              src="src/ourMentors/Group 126708.svg"
+              alt=""
+            />
+            <h3 id="rdMentorH3">Full name here</h3>
+            <p id="rdMentorP">description</p>
+            <button id="rdDepartementBtn">departement</button>
+          </center>
+        </div>
+        <div id="stMentor" class="autoShow">
+          <center>
+            <img
+              id="stMentorImg"
+              src="src/ourMentors/Group 126708.svg"
+              alt=""
+            />
+            <h3 id="stMentorH3">Full name here</h3>
+            <p id="stMentorP">description</p>
+            <button id="stDepartementBtn">departement</button>
+          </center>
+        </div>
+        <div id="ndMentor" class="autoShow">
+          <center>
+            <img
+              id="ndMentorImg"
+              src="src/ourMentors/Group 126708.svg"
+              alt=""
+            />
+            <h3 id="ndMentorH3">Full name here</h3>
+            <p id="ndMentorP">description</p>
+            <button id="ndDepartementBtn">departement</button>
+          </center>
+        </div>
+        <div id="ourMentorsBottom"></div>
       </div>
     </section>
 
