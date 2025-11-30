@@ -136,7 +136,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
- transform: scale(1.1);
+  transform: scale(1.1);
 
   box-shadow: 0 4px 15px rgba(255, 71, 174, 0.4);
 }
@@ -277,14 +277,43 @@ body {
     border-radius: 10px;
   }
 }
-@media (max-width : 768px){
-  body{
-    font-size: smaller ; 
+.headtitle {
+  padding-top: 4rem;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: smaller;
   }
-  .event-title{
-    font-size : 15px ; 
+  .event-title {
+    font-size: 15px;
   }
-  .agendaTitleMain{
+  .agendaTitleMain {
     font-size: 3rem;
+  }
+  .lampa {
+    display: none;
+  }
+  .title {
+    font-size: 3.8rem;
+    width: 100%;
+  }
+  .subtitle {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .rigester {
+    padding: 8px 20px;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+  }
+  .showMore {
+    display: none;
+  }
+  .headtitle {
+    padding-top: 0;
+  }
+  .titleBtn {
+    padding-top: 4rem;
   }
 }

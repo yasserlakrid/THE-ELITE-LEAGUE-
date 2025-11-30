@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="landing_page.css" />
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style3.css" />
   </head>
   <body class="text-white">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -90,17 +91,18 @@
           "
         >
           <img
+            class="lampa"
             style="width: 300px; height: 300px"
             src="src/lampa.svg"
             alt="Light bulb"
           />
         </div>
-        <!-- Character images and text container -->
+
         <div
           class="char position-relative w-100 bottom-0"
           style="height: 600px"
         >
-          <div class="headtitle mx-auto pt-5 d-flex flex-column w-50">
+          <div class="headtitle mx-auto  d-flex flex-column w-50">
             <div class="title text-center">THE ELITE</div>
             <div class="subtitle text-center">LEAGUE</div>
 
@@ -722,38 +724,68 @@
           Get personalized guidance from seasoned professionals who will <br />
           help you level up your problms
         </p>
-        <div  class="rdMentor autoShow ">
-          
-            <img
-              id="rdMentorImg"
-              src="src/ourMentors/Group 126708.svg"
-              alt=""
-            />
-            <h3 id="rdMentorH3">Full name here</h3>
-            <p id="rdMentorP">description</p>
-            <button id="rdDepartementBtn">departement</button>
-          
+        <div class="rdMentor autoShow">
+          <img id="rdMentorImg" src="src/ourMentors/Group 126708.svg" alt="" />
+          <h3 id="rdMentorH3">Full name here</h3>
+          <p id="rdMentorP">description</p>
+          <button id="rdDepartementBtn">departement</button>
         </div>
-        
-        <div  class="rdMentor autoShow ">
-       
-            <img
-              id="rdMentorImg"
-              src="src/ourMentors/Group 126708.svg"
-              alt=""
-            />
-            <h3 id="rdMentorH3">Full name here</h3>
-            <p id="rdMentorP">description</p>
-            <button id="rdDepartementBtn">departement</button>
-       
-        </div>
-       
 
+        <div class="rdMentor autoShow">
+          <img id="rdMentorImg" src="src/ourMentors/Group 126708.svg" alt="" />
+          <h3 id="rdMentorH3">Full name here</h3>
+          <p id="rdMentorP">description</p>
+          <button id="rdDepartementBtn">departement</button>
+        </div>
 
         <div id="ourMentorsBottom"></div>
       </div>
     </section>
+    <!-- =========================================================
+         REGESTER NOW SECTION
+         ========================================================= -->
+    <section class="regester-section">
+      <div class="Reg_page_top">
+        <div class="corner_logo">
+          <img src="./logo.png" alt="" style="width: 100%; height: 100%" />
+        </div>
+        <div class="titleR">
+          <h1>REGISTER NOW</h1>
+          <p>
+            Get personalized guidance from seasoned professionals who will help
+            you level up
+          </p>
+          <p>your game</p>
+        </div>
+      </div>
 
+      <div class="Reg_page_bottom">
+        <form>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" />
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" />
+
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter your number" />
+
+          <label>Country</label>
+          <input type="text" placeholder="Enter your country" />
+
+          <label>Experience Level</label>
+          <input type="text" placeholder="Beginner / Intermediate / Expert" />
+
+          <label>Your Goal</label>
+          <input type="text" placeholder="Tell us why you want to join" />
+          <button class="submitR">Submit</button>
+        </form>
+
+        <div class="info_card">
+          <img src="./info_card.png" alt="" style="width: 100%; height: 100%" />
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
