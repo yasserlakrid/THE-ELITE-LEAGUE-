@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
 
 body {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
-
 
 body {
   background-color: #17002b;
@@ -33,7 +32,7 @@ body {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   border-bottom: 1px solid #ffffff;
@@ -51,7 +50,6 @@ body {
   margin-right: 0; /* Remove margin from last item */
 }
 
-
 /* --- SECTION OUR MENTORS --- */
 
 #ourMentors {
@@ -61,7 +59,7 @@ body {
   margin: 0 auto;
   padding: 4rem 1rem;
   box-sizing: border-box;
-  
+
   /* Utilisation de Flexbox pour un alignement plus facile des hauteurs */
   display: flex;
   flex-wrap: wrap; /* Permet de passer à la ligne sur petit écran */
@@ -78,16 +76,12 @@ body {
   transform: translate(-50%, -50%);
   width: 60%;
   height: 40%;
-  background: #F362B3;
+  background: #f362b3;
   opacity: 0.5;
   filter: blur(150px);
   z-index: 0;
   pointer-events: none;
 }
-
-/* --- TITRES ET TEXTES --- */
-/* On les sort du flux Flex des cartes pour les mettre en absolu ou en block au dessus via HTML, 
-   mais comme on ne touche pas au HTML, on utilise width 100% pour forcer le passage à la ligne */
 
 #ourMentorsH2 {
   width: 100%;
@@ -99,7 +93,12 @@ body {
   font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 600;
   text-transform: uppercase;
-  background: linear-gradient(270deg, #3B79C9 -6.54%, rgba(47, 135, 203, 0.98) 22.3%, rgba(6, 182, 212, 0.90) 65.37%);
+  background: linear-gradient(
+    270deg,
+    #3b79c9 -6.54%,
+    rgba(47, 135, 203, 0.98) 22.3%,
+    rgba(6, 182, 212, 0.9) 65.37%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -112,61 +111,49 @@ body {
   position: relative;
   z-index: 2;
   margin-bottom: 3rem; /* Espace avant les cartes */
-  color: #FFF;
-  font-family: 'Cardo', serif;
+  color: #fff;
+  font-family: "Cardo", serif;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* --- STYLE COMMUN DES CARTES --- */
-#rdMentor, #stMentor, #ndMentor {
-  position: relative;
-  top: auto; left: auto; /* Reset */
+.rdMentor{
   
-  flex: 0 1 350px; /* Largeur de base 350px, peut rétrécir */
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  
+
   border-radius: 31px;
-  border: 1px solid #3B116E;
-  background: linear-gradient(125deg, rgba(18, 2, 43, 0.90) 22.54%, rgba(29, 7, 116, 0.90) 87.28%, rgba(59, 17, 110, 0.90) 112.34%);
+  border: 1px solid #3b116e;
+  background: linear-gradient(
+    125deg,
+    rgba(18, 2, 43, 0.9) 22.54%,
+    rgba(29, 7, 116, 0.9) 87.28%,
+    rgba(59, 17, 110, 0.9) 112.34%
+  );
   box-shadow: 0 23px 10px 13px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
 }
 
-/* --- CARTES DE CÔTÉ (Gauche/Droite) --- */
-#rdMentor, #ndMentor {
-  z-index: 5;
-  height: 375px; /* Hauteur fixe pour les petites cartes */
-}
 
-/* --- CARTE DU MILIEU (La Grande) --- */
-#stMentor {
-  z-index: 10;
-  /* On la rend physiquement plus haute pour éviter les problèmes de flou du scale */
-  height: 480px; 
-  /* On l'élargit un peu plus */
-  flex: 0 1 380px;
-  
-  background: linear-gradient(125deg, rgba(28, 5, 63, 0.95) 22.54%, rgba(45, 12, 170, 0.90) 87.28%, rgba(59, 17, 110, 0.95) 112.34%);
-  box-shadow: 0 30px 20px rgba(0,0,0,0.5); /* Ombre plus forte */
-  border: 1px solid #682aa8; /* Bordure légèrement plus claire */
-}
 
-/* --- CONTENU DES CARTES --- */
-#rdMentorImg, #stMentorImg, #ndMentorImg {
-  width: 80px; height: 80px;
+
+
+
+#rdMentorImg {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
 
-/* Ajustement image milieu */
-#stMentorImg { width: 100px; height: 100px; } /* Image plus grande au milieu */
 
-#rdMentorH3, #stMentorH3, #ndMentorH3 {
-  color: #FFF;
-  font-family: 'Cardo', serif;
+#rdMentorH3 {
+  color: #fff;
+  font-family: "Cardo", serif;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -174,10 +161,10 @@ body {
   margin: 0.5rem 0;
 }
 
-#stMentorH3 { font-size: 1.8rem; } /* Titre plus gros au milieu */
 
-#rdMentorP, #stMentorP, #ndMentorP {
-  color: #FF008E;
+
+#rdMentorP {
+  color: #ff008e;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -185,13 +172,18 @@ body {
   margin-bottom: auto; /* Pousse le contenu vers le haut */
 }
 
-#stMentorP { font-size: 1.2rem; } /* Texte plus gros au milieu */
 
-#rdDepartementBtn, #stDepartementBtn, #ndDepartementBtn {
+#rdDepartementBtn {
   border-radius: 20px;
-  background: linear-gradient(91deg, #9350DC 1.11%, #C359C7 29.81%, #F362B3 59.3%, #FF47AE 98.89%);
+  background: linear-gradient(
+    91deg,
+    #9350dc 1.11%,
+    #c359c7 29.81%,
+    #f362b3 59.3%,
+    #ff47ae 98.89%
+  );
   border: 0;
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -201,13 +193,10 @@ body {
   transition: 0.3s;
 }
 
-#stDepartementBtn {
-  margin-top: 9rem;
-  padding: 12px 35px; /* Bouton plus gros au milieu */
-  font-size: 1.2rem;
-}
 
-#rdDepartementBtn:hover, #stDepartementBtn:hover, #ndDepartementBtn:hover {
+
+#rdDepartementBtn:hover
+ {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(243, 98, 179, 0.6);
 }
@@ -217,9 +206,7 @@ body {
   height: 50px;
 }
 
-/* --- ANIMATIONS CORRIGÉES --- */
 
-/* Animation par défaut pour les textes et cartes de côté */
 .autoShow {
   animation: autoShowAnim 0.8s ease-out forwards;
   animation-timeline: view();
@@ -228,55 +215,49 @@ body {
 }
 
 @keyframes autoShowAnim {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Animation SPÉCIFIQUE pour la carte du milieu pour garder sa taille */
-#stMentor.autoShow {
-  animation: autoShowMiddle 0.8s ease-out forwards;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
-}
-
-@keyframes autoShowMiddle {
-  from { 
-    opacity: 0; 
-    transform: translateY(50px) scale(0.9); 
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0) scale(1.1); /* On force le scale ici */
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+
+
 
 @keyframes neonEfect {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.1; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
 }
 
 .neon {
   animation: neonEfect 5s linear infinite;
 }
 
-/* --- RESPONSIVE --- */
 
-/* Tablette et petit laptop */
 @media screen and (max-width: 1024px) {
   #ourMentors {
     gap: 1rem;
   }
-  
-  #rdMentor, #ndMentor, #stMentor {
-    flex: 1 1 300px; /* Deviennent flexibles */
-    height: auto; /* Hauteur auto pour s'adapter au contenu */
+
+  .rdMentor
+ 
+ {
+    flex: 1 1 300px; 
+    height: auto; 
     min-height: 400px;
+
   }
-  
-  /* On réduit la différence de taille sur tablette */
-  @keyframes autoShowMiddle {
-    to { opacity: 1; transform: translateY(0) scale(1.05); }
-  }
+ 
+
 }
 
 /* Mobile */
@@ -285,18 +266,11 @@ body {
     flex-direction: column; /* Vertical */
   }
 
-  #stMentor {
-    order: -1; /* Optionnel : Mettre le mentor principal en premier */
-    width: 100%;
-    transform: none !important; /* Pas de scale sur mobile */
-  }
 
-  #rdMentor, #ndMentor {
-    width: 100%;
+  .rdMentor
+ {
+    width: 80%;
+
   }
-  
-  /* Sur mobile, on annule l'effet de zoom dans l'animation */
-  @keyframes autoShowMiddle {
-    to { opacity: 1; transform: translateY(0) scale(1); }
-  }
+ 
 }

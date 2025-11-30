@@ -23,48 +23,49 @@
     <link rel="stylesheet" href="style2.css" />
   </head>
   <body class="text-white">
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="src/logo-top.png"
+            alt="Logo"
+            style="height: 60px; cursor: pointer"
+          />
+        </a>
 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <a class="navbar-brand" href="#">
-      <img
-        src="src/logo-top.png"
-        alt="Logo"
-        style="height: 60px; cursor: pointer"
-      />
-    </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#agenda">AGENDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why">WHY PARTICIPATING</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">MENTORS</a></li>
+          </ul>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-        <li class="nav-item"><a class="nav-link" href="#agenda">AGENDA</a></li>
-        <li class="nav-item"><a class="nav-link" href="#why">WHY PARTICIPATING</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">MENTORS</a></li>
-      </ul>
-
-      <a class="rigester text-decoration-none btn btn-primary px-4 mx-3" >Register</a >
-
-    </div>
-  </div>
-</nav>
-
+          <a class="rigester text-decoration-none btn btn-primary px-4 mx-3"
+            >Register</a
+          >
+        </div>
+      </div>
+    </nav>
 
     <!-- =========================================================
          HEAD SECTION (navbar + hero)
@@ -363,7 +364,7 @@
             </h5>
           </div>
           <div
-            class="timeline d-flex flex-row justify-content-center align-items-center mt-4 "
+            class="timeline d-flex flex-row justify-content-center align-items-center mt-4"
           >
             <div
               class="day d1 d-flex justify-content-center text-center flex-column"
@@ -721,8 +722,8 @@
           Get personalized guidance from seasoned professionals who will <br />
           help you level up your problms
         </p>
-        <div id="rdMentor" class="autoShow">
-          <center>
+        <div  class="rdMentor autoShow ">
+          
             <img
               id="rdMentorImg"
               src="src/ourMentors/Group 126708.svg"
@@ -731,32 +732,24 @@
             <h3 id="rdMentorH3">Full name here</h3>
             <p id="rdMentorP">description</p>
             <button id="rdDepartementBtn">departement</button>
-          </center>
+          
         </div>
-        <div id="stMentor" class="autoShow">
-          <center>
+        
+        <div  class="rdMentor autoShow ">
+       
             <img
-              id="stMentorImg"
+              id="rdMentorImg"
               src="src/ourMentors/Group 126708.svg"
               alt=""
             />
-            <h3 id="stMentorH3">Full name here</h3>
-            <p id="stMentorP">description</p>
-            <button id="stDepartementBtn">departement</button>
-          </center>
+            <h3 id="rdMentorH3">Full name here</h3>
+            <p id="rdMentorP">description</p>
+            <button id="rdDepartementBtn">departement</button>
+       
         </div>
-        <div id="ndMentor" class="autoShow">
-          <center>
-            <img
-              id="ndMentorImg"
-              src="src/ourMentors/Group 126708.svg"
-              alt=""
-            />
-            <h3 id="ndMentorH3">Full name here</h3>
-            <p id="ndMentorP">description</p>
-            <button id="ndDepartementBtn">departement</button>
-          </center>
-        </div>
+       
+
+
         <div id="ourMentorsBottom"></div>
       </div>
     </section>
