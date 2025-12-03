@@ -15,6 +15,7 @@ body {
 .nav-link {
   color: #fff;
 }
+
 .navbar-nav .nav-item {
   margin-right: 2rem;
 }
@@ -269,6 +270,9 @@ body {
   bottom: 50%;
   z-index: 0;
   width: 200px;
+}
+.navbar-toggler {
+  margin-right: 1rem;
 }
 .char2 {
   position: absolute;
