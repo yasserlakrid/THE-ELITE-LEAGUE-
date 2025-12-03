@@ -301,6 +301,7 @@ body {
 @media (max-width: 991px) {
   .navbar-collapse {
     background: linear-gradient(to bottom, #0a0520, #1a0a3e);
+    margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
   }
