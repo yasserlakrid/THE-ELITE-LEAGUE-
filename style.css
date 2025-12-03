@@ -378,3 +378,7 @@ body {
   animation: gradientShift 3s ease infinite;
   background-size: 200% auto;
 }
+.teaser-frame{
+  border-radius: 20px;
+  background: linear-gradient(90deg , #12022B , #270A4D , #3B116E);
+}
