@@ -164,11 +164,14 @@ body {
 
   box-shadow: 0 4px 15px rgba(255, 71, 174, 0.4);
 }
-.bla{
-  background-image: url(src/headP/group.png);
-}
 .date {
-  color: gray;
+  color: #feeaf5;
+}
+.dated {
+  color: #feeaf5;
+}
+.bla {
+  background-image: url(src/headP/group.png);
 }
 
 .event-details {
@@ -344,6 +347,6 @@ body {
 
 @media (max-width: 900px) {
   .sep {
-    height: 25rem;
+    height: 0rem;
   }
 }
