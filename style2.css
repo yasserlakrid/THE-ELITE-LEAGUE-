@@ -156,9 +156,7 @@ body {
 /* --- CARTE DU MILIEU (La Grande) --- */
 #stMentor {
   z-index: 10;
-  /* On la rend physiquement plus haute pour éviter les problèmes de flou du scale */
   height: 480px;
-  /* On l'élargit un peu plus */
   flex: 0 1 380px;
 
   background: linear-gradient(
@@ -167,8 +165,8 @@ body {
     rgba(45, 12, 170, 0.9) 87.28%,
     rgba(59, 17, 110, 0.95) 112.34%
   );
-  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.5); /* Ombre plus forte */
-  border: 1px solid #682aa8; /* Bordure légèrement plus claire */
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid #682aa8;
 }
 
 /* --- CONTENU DES CARTES --- */
@@ -185,7 +183,7 @@ body {
 #stMentorImg {
   width: 100px;
   height: 100px;
-} /* Image plus grande au milieu */
+}
 
 #rdMentorH3,
 #stMentorH3,
@@ -211,12 +209,12 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: auto; /* Pousse le contenu vers le haut */
+  margin-bottom: auto;
 }
 
 #stMentorP {
   font-size: 1rem;
-} /* Texte plus gros au milieu */
+}
 
 #rdDepartementBtn,
 #stDepartementBtn,
@@ -253,19 +251,11 @@ body {
   box-shadow: 0 0 20px rgba(243, 98, 179, 0.6);
 }
 
-#ourMentorsBottom {
-  width: 100%;
-  height: 50px;
-}
-
-/* --- ANIMATIONS CORRIGÉES --- */
-
-/* Animation par défaut pour les textes et cartes de côté */
 .autoShow {
   animation: autoShowAnim 0.8s ease-out forwards;
   animation-timeline: view();
-  animation-range: entry 10% cover 30%;
-  opacity: 0; /* État de départ */
+  animation-range: entry 0% cover 30%;
+  opacity: 0;
 }
 
 @keyframes autoShowAnim {
@@ -276,24 +266,6 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* Animation SPÉCIFIQUE pour la carte du milieu pour garder sa taille */
-#stMentor.autoShow {
-  animation: autoShowMiddle 0.8s ease-out forwards;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
-}
-
-@keyframes autoShowMiddle {
-  from {
-    opacity: 0;
-    transform: translateY(50px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1.1); /* On force le scale ici */
   }
 }
 
@@ -343,7 +315,6 @@ body {
   }
 
   #stMentor {
-    order: -1; /* Optionnel : Mettre le mentor principal en premier */
     width: 100%;
     transform: none !important; /* Pas de scale sur mobile */
   }
@@ -352,19 +323,8 @@ body {
   #ndMentor {
     width: 100%;
   }
-
-  /* Sur mobile, on annule l'effet de zoom dans l'animation */
-  @keyframes autoShowMiddle {
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
 }
 @media screen and (max-width: 768px) {
-  #stMentor {
-    top: 92rem;
-  }
   #stDepartementBtn {
     border-radius: 20px;
     background: linear-gradient(
@@ -380,8 +340,11 @@ body {
     font-size: 1rem;
     font-weight: 600;
     padding: 10px 25px;
-    margin-top: 6rem;
+    margin-top: 4rem;
     cursor: pointer;
     transition: 0.3s;
+  }
+  #stMentorP {
+    font-size: 0.7rem;
   }
 }
