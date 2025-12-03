@@ -164,6 +164,9 @@ body {
 
   box-shadow: 0 4px 15px rgba(255, 71, 174, 0.4);
 }
+.bla{
+  background-image: url(src/headP/group.png);
+}
 .date {
   color: gray;
 }
