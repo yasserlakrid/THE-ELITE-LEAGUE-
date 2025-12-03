@@ -95,7 +95,24 @@ body {
 .logoSec {
 }
 .agenda-section {
+  min-height: 100vh;
+
   position: relative;
+
+  padding-top: 50px;
+  padding-bottom: 100px;
+ 
+  overflow: hidden;
+}
+.our-mentors{
+    min-height: 100vh;
+
+  position: relative;
+
+  padding-top: 20px;
+  padding-bottom: 100px;
+ 
+  overflow: hidden;
 }
 .agendaTitleMain {
   font-size: 4rem;
@@ -146,7 +163,6 @@ body {
 .date {
   color: gray;
 }
-
 
 .event-details {
   height: 100%;
