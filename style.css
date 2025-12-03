@@ -101,17 +101,21 @@ body {
 
   padding-top: 50px;
   padding-bottom: 100px;
- 
+
   overflow: hidden;
 }
-.our-mentors{
-    min-height: 100vh;
+.tutu {
+  font-family: "Montserrat";
+}
+
+.our-mentors {
+  min-height: 100vh;
 
   position: relative;
 
   padding-top: 20px;
   padding-bottom: 100px;
- 
+
   overflow: hidden;
 }
 .agendaTitleMain {
