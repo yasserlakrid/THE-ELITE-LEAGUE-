@@ -67,15 +67,16 @@ body {
   font-size: 100px;
   color: #fff;
   font-weight: bold;
-  font-family: "Montserrat";
+  font-family: "cardo";
   text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 24px #fff;
 }
 .subtitle {
+  font-family: "Montserrat";
   font-size: 50px;
   margin-top: -20px;
   color: #dab447;
   font-weight: bold;
-  font-family: "cardo";
+
   text-shadow: 0 0 0px #dab447, 0 0 0px #dab447, 0 0 24px #dab447;
 }
 @keyframes float {
@@ -378,7 +379,7 @@ body {
   animation: gradientShift 3s ease infinite;
   background-size: 200% auto;
 }
-.teaser-frame{
+.teaser-frame {
   border-radius: 20px;
-  background: linear-gradient(90deg , #12022B , #270A4D , #3B116E);
+  background: linear-gradient(90deg, #12022b, #270a4d, #3b116e);
 }
