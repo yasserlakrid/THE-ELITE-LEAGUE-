@@ -152,6 +152,7 @@ body {
   transition: 0.5s ease;
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
+  min-width: 7rem;
 }
 .day:hover {
   background: linear-gradient(to right, #9350dc, #c359c7, #f362b3, #ff47ae);
