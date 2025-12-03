@@ -94,6 +94,9 @@ body {
 }
 .logoSec {
 }
+.agenda-section {
+  position: relative;
+}
 .agendaTitleMain {
   font-size: 4rem;
   font-weight: 800;
@@ -143,8 +146,8 @@ body {
 .date {
   color: gray;
 }
-.details {
-}
+
+
 .event-details {
   height: 100%;
   border-radius: 20px;
@@ -246,9 +249,7 @@ body {
   z-index: 0;
   width: 300px;
 }
-.agenda-section {
-  position: relative;
-}
+
 .glowing1 {
   position: absolute;
   left: 50%;
@@ -315,5 +316,11 @@ body {
   }
   .titleBtn {
     padding-top: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .sep {
+    height: 25rem;
   }
 }
