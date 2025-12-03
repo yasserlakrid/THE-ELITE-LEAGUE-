@@ -301,7 +301,9 @@ body {
 @media (max-width: 991px) {
   .navbar-collapse {
     background: linear-gradient(to bottom, #0a0520, #1a0a3e);
-    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
     padding: 1rem;
     border-radius: 10px;
   }
@@ -351,4 +353,28 @@ body {
   .sep {
     height: 0rem;
   }
+}
+.video {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+}
+.video p {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    90deg,
+    #10b981 0%,
+    #3b82f6 25%,
+    #8b5cf6 50%,
+    #ec4899 75%,
+    #f59e0b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  animation: gradientShift 3s ease infinite;
+  background-size: 200% auto;
 }
